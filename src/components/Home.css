@@ -1,0 +1,43 @@
+.heroImg {
+    width: 100%;
+    z-index: 1;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .heroContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    border: 4px solid transparent;
+    animation-name: borderAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 10px);
+    }
+    100% {
+      transform: translate(0, -0px);
+    }
+  }
+  
+  @keyframes borderAnimation {
+    0%, 100% {
+      border-width: 4px;
+    }
+    50% {
+      border-width: 8px;
+    }
+  }
+  
